@@ -15,19 +15,19 @@ boolean notop(boolean x,boolean y){
 
 }
 
-boolean and(){
+static boolean and(){
 	return true &&true;
 
 
 
 }
 
-boolean or(){
+static boolean or(){
 	return false || false;
 
 
 }
-boolean not(){
+static boolean not(){
 	return !(false);
 
 }
@@ -39,9 +39,9 @@ boolean not(){
 	System.out.println(l1.andop(a,b));
 	System.out.println(l1.orop(a,b));
 	System.out.println(l1.notop(a,b));
-	System.out.println(!l1.not());
-	System.out.println(l1.and());
-	System.out.println(l1.or());
+	System.out.println(!not());
+	System.out.println(and());
+	System.out.println(or());
 	
 
 
